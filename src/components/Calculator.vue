@@ -1,6 +1,6 @@
 <template>
-  <div class="card box">
-    <div v-show="!dataComplete">
+  <transition-group name="slide" tag="div" class="card box">
+    <div class="questions" v-show="!dataComplete" key="questions">
       <div class="card-header">
         <h4 class="mb-3">
           Switching with us is always fast, simple and hassle-free. We’ve just
@@ -64,7 +64,7 @@
         </transition-group>
       </div>
     </div>
-    <div v-show="dataComplete" class="container final-results">
+    <div v-show="dataComplete" class="container result" key="result">
       <span class="go-back mt-3 mb-5" @click="dataComplete = false">
         <img src="@/assets/back.svg" />
         <small>Go Back to Inputs</small>
@@ -183,7 +183,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </transition-group>
 </template>
 
 <script>
@@ -245,7 +245,7 @@ export default {
   methods: {
     planSelected(plan) {
       this.$emit("planSelected", plan);
-      if (plan.name) {
+      if (!this.userDetails) {
         setTimeout(() => {
           document.querySelector(".location").scrollIntoView({
             behavior: "smooth"
@@ -255,7 +255,7 @@ export default {
     },
     locationSubmitted(userDetails) {
       this.$emit("locationSubmitted", userDetails);
-      if (userDetails) {
+      if (!this.size) {
         setTimeout(() => {
           document.querySelector(".house-size").scrollIntoView({
             behavior: "smooth"
@@ -275,7 +275,12 @@ export default {
     },
     occupantsSelected() {
       this.$emit("occupantsSelected", this.numberOfOccupants);
-      this.dataComplete = true;
+      if (this.plan && this.userDetails && this.size) this.dataComplete = true;
+      setTimeout(() => {
+        document.querySelector(".go-back").scrollIntoView({
+          behavior: "smooth"
+        });
+      }, 600);
     }
   },
   computed: {
@@ -293,6 +298,7 @@ export default {
   overflow-y: auto;
   scrollbar-width: none;
   border: none;
+  border-radius: 0;
 
   &::-webkit-scrollbar {
     width: 0px;
@@ -300,24 +306,28 @@ export default {
     display: none;
   }
 
-  .card-header {
-    background: transparent;
-    h4 {
-      font-weight: bold;
-      color: #9f4fff;
+  .questions {
+    transition: 0.5s all ease;
+    .card-header {
+      background: transparent;
+      h4 {
+        font-weight: bold;
+        color: #9f4fff;
+      }
+    }
+
+    .input-grid {
+      display: grid;
+      grid-gap: 2rem;
+
+      form {
+        transition: all 1s;
+      }
     }
   }
 
-  .input-grid {
-    display: grid;
-    grid-gap: 2rem;
-
-    form {
-      transition: all 1s;
-    }
-  }
-
-  .final-results {
+  .result {
+    transition: 0.5s all ease;
     .options-grid {
       display: grid;
       grid-gap: 1rem;
@@ -351,6 +361,15 @@ export default {
   transform: translateY(30px);
 }
 .list-complete-leave-active {
+  position: absolute;
+}
+
+.slide-enter,
+.slide-leave-to {
+  transform: translateX(100%);
+}
+.slide-leave-active,
+.slide-enter-active {
   position: absolute;
 }
 </style>

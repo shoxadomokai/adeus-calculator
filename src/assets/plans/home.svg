@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50pt" height="50pt" viewBox="0 0 50 50" version="1.1">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="32" y1="5.999" x2="32" y2="57.662" spreadMethod="reflect" gradientTransform="matrix(0.78125,0,0,0.78125,0,0)">
+<stop offset="0" style="stop-color:#1A6DFF;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#C822FF;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="33" y1="5.9787" x2="33" y2="57.6417" spreadMethod="reflect" gradientTransform="matrix(0.78125,0,0,0.78125,0,0)">
+<stop offset="0" style="stop-color:#1A6DFF;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#C822FF;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="32" y1="5.9787" x2="32" y2="57.6417" spreadMethod="reflect" gradientTransform="matrix(0.78125,0,0,0.78125,0,0)">
+<stop offset="0" style="stop-color:#1A6DFF;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#C822FF;stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="32" y1="600.4167" x2="32" y2="597.3232" spreadMethod="reflect" gradientTransform="matrix(0.78125,0,0,-0.78125,0,510.9375)">
+<stop offset="0" style="stop-color:#6DC7FF;stop-opacity:1;"/>
+<stop offset="1" style="stop-color:#E6ABFF;stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 42.945313 21.621094 C 43.433594 21.917969 44.019531 21.925781 44.515625 21.644531 C 45.007813 21.367188 45.3125 20.84375 45.3125 20.277344 L 45.3125 17.863281 C 45.3125 17.046875 44.875 16.273438 44.179688 15.855469 L 26.210938 5.023438 C 25.464844 4.574219 24.535156 4.574219 23.792969 5.023438 L 5.824219 15.855469 C 5.125 16.273438 4.6875 17.046875 4.6875 17.863281 L 4.6875 20.277344 C 4.6875 20.84375 4.992188 21.367188 5.484375 21.644531 C 5.726563 21.78125 5.988281 21.851563 6.253906 21.851563 C 6.527344 21.851563 6.804688 21.773438 7.054688 21.621094 L 7.8125 21.167969 L 7.8125 40.625 C 6.953125 40.625 6.25 41.328125 6.25 42.1875 L 6.25 43.75 L 4.6875 43.75 L 4.6875 45.3125 L 45.3125 45.3125 L 45.3125 43.75 L 43.75 43.75 L 43.75 42.1875 C 43.75 41.328125 43.046875 40.625 42.1875 40.625 L 42.1875 21.167969 Z M 42.1875 43.75 L 7.8125 43.75 L 7.8125 42.1875 L 42.1875 42.1875 Z M 9.375 37.5 L 9.375 35.9375 L 12.5 35.9375 L 12.5 34.375 L 9.375 34.375 L 9.375 20.226563 L 24.601563 11.050781 C 24.847656 10.902344 25.152344 10.902344 25.398438 11.050781 L 40.625 20.226563 L 40.625 34.375 L 37.5 34.375 L 37.5 35.9375 L 40.625 35.9375 L 40.625 37.5 L 35.9375 37.5 L 35.9375 39.0625 L 40.625 39.0625 L 40.625 40.625 L 29.6875 40.625 L 29.6875 30.480469 C 29.6875 29.179688 28.628906 28.125 27.332031 28.125 L 22.667969 28.125 C 21.371094 28.125 20.3125 29.179688 20.3125 30.480469 L 20.3125 40.625 L 9.375 40.625 L 9.375 39.0625 L 14.0625 39.0625 L 14.0625 37.5 Z M 28.125 30.480469 L 28.125 40.625 L 21.875 40.625 L 21.875 30.480469 C 21.875 30.042969 22.230469 29.6875 22.667969 29.6875 L 27.332031 29.6875 C 27.769531 29.6875 28.125 30.042969 28.125 30.480469 Z M 26.207031 9.710938 C 25.835938 9.488281 25.417969 9.375 25 9.375 C 24.582031 9.375 24.164063 9.488281 23.792969 9.710938 L 6.25 20.277344 L 6.25 17.863281 C 6.25 17.589844 6.394531 17.332031 6.628906 17.195313 L 24.601563 6.363281 C 24.847656 6.214844 25.152344 6.214844 25.398438 6.363281 L 43.371094 17.195313 C 43.601563 17.335938 43.75 17.589844 43.75 17.863281 L 43.75 20.285156 Z "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 25 33.59375 L 26.5625 33.59375 L 26.5625 36.71875 L 25 36.71875 Z "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 20.3125 25 L 29.6875 25 L 29.6875 26.5625 L 20.3125 26.5625 Z "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 7.8125 42.1875 L 42.1875 42.1875 L 42.1875 43.75 L 7.8125 43.75 Z "/>
+</g>
+</svg>
